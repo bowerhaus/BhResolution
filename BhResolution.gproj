@@ -1,0 +1,18 @@
+<project>
+ <properties autorotation="3" fps="60" scaleMode="2" iosDevice="0" packageName="com.yourdomain.yourapp" logicalHeight="960" logicalWidth="640" retinaDisplay="0" assetsOnly="0" orientation="0" architecture="0">
+  <imageScales>
+   <scale suffix="@2x" scale="2"/>
+   <scale suffix="@half" scale="0.5"/>
+  </imageScales>
+ </properties>
+ <file source="../BhHelpers/Tahoma.ttf"/>
+ <file source="main.lua"/>
+ <folder name="Images">
+  <file source="Images/Art/asset@half.png"/>
+  <file source="Images/Art/asset@2x.png"/>
+  <file source="Images/Art/asset.png"/>
+  <file source="Images/Art/bg@half.png"/>
+  <file source="Images/Art/bg@2x.png"/>
+  <file source="Images/Art/bg.png"/>
+ </folder>
+</project>
