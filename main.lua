@@ -3,7 +3,7 @@ local cw, ch=application:getContentWidth(), application:getContentHeight()
 local lw, lh=application:getLogicalWidth(), application:getLogicalHeight()
 
 -- Load up background
-bg=Bitmap.new(Texture.new("Images/bg.png"))
+bg=Bitmap.new(Texture.new("Images/bg.png"), true)
 bg:setAnchorPoint(0.5, 0.5)
 bg:setPosition(cw/2, ch/2)
 if cw>ch then
@@ -12,7 +12,7 @@ end
 stage:addChild(bg)
 
 -- And asset
-asset=Bitmap.new(Texture.new("Images/asset.png"))
+asset=Bitmap.new(Texture.new("Images/asset.png"), true)
 asset:setAnchorPoint(0.5, 0.5)
 asset:setPosition(cw/2, 250)
 stage:addChild(asset)
@@ -32,7 +32,7 @@ function placeMarker(x, y, txo, tyo, fmt, color)
 	pointer:endPath()
 	marker:addChild(pointer)
 
-	local font=TTFont.new("Tahoma.ttf", 24)
+	local font=TTFont.new("Tahoma.ttf", 24, true)
 	local txt=TextField.new(font, text)
 	local textx=x+txo
 	if txo<0 then
